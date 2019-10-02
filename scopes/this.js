@@ -9,6 +9,12 @@ let John = {
             console.log(this);
         }
         innerFunction();
+        let proba = ()=>{
+            console.log(this);
+        }
+        proba();
+
     }
+
 }
 John.calclulateAge();

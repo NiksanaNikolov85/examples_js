@@ -13,8 +13,6 @@ let John = {
             console.log(this);
         }
         proba();
-        
-
     }
 
 }

@@ -10,4 +10,8 @@ app.get('/test', function (req, res) {
     res.send('Hello again !')
 })
 
+app.get('/user/:id', function (req, res) {
+    res.send('user ' + req.params.id)
+})
+
 app.listen(3000, () => {console.log('Started again')})

@@ -36,13 +36,14 @@ app.get('/posts/:city', function (req, res) {
         res.setHeader('Content-Type', 'application/json');
         res.end(JSON.stringify(result.data));
     }).catch((error) => {
-        const code = error.response.data.cod;
-        if(error.response && code ==='404'){
-            console.log('Error 404 !');
+        const code = error.response && error.response.data && error.response.data.cod;
+        const statusCode = error.response.data.cod;
+        if(code ==='404'){
+            res.status(statusCode).send('Something broke! There is error '+statusCode);
         }else{
-            console.log('Error');
+            res.status(statusCode).send('Something broke which is error :' +statusCode);
         }
-        console.log(error.response.data);
+            console.log(error.response.data);
     });
 });
 

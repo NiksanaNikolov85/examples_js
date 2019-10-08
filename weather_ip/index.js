@@ -26,15 +26,23 @@ app.get('/posts', function (req, res) {
 })
 
 app.get('/posts/:city', function (req, res) {
-    axios.get('https://api.openweathermap.org/data/2.5/weather', {
+    axios.get('https://api.openweathermap.org/data/2.5/sdweather', {
         params: {
-            q: req.params.city ? 'sd' : 'sd',
+            q: req.params.city,
             APPID,
         }
     }).then((result) => {
         console.log(result.data)
         res.setHeader('Content-Type', 'application/json');
         res.end(JSON.stringify(result.data));
+    }).catch((error) => {
+        const code = error.response.data.cod;
+        if(error.response && code ==='404'){
+            console.log('Error 404 !');
+        }else{
+            console.log('Error');
+        }
+        console.log(error.response.data);
     });
 });
 

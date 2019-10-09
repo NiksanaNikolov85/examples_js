@@ -16,7 +16,7 @@ app.get('/test', function (req, res) {
     res.send('Hello again !')
 })
 
-app.get('/posts', function (req, res) {
+app.get('/posts', (req, res) => {
     axios.get('https://jsonplaceholder.typicode.com/posts/')
         .then((result) => {
             console.log(result.data)
@@ -25,25 +25,24 @@ app.get('/posts', function (req, res) {
         });
 })
 
-app.get('/posts/:city', function (req, res) {
+app.get('/posts/:city', (req, res) => {
     axios.get('https://api.openweathermap.org/data/2.5/sdweather', {
         params: {
             q: req.params.city,
             APPID,
         }
     }).then((result) => {
-        console.log(result.data)
         res.setHeader('Content-Type', 'application/json');
         res.end(JSON.stringify(result.data));
     }).catch((error) => {
         const code = error.response && error.response.data && error.response.data.cod;
         const statusCode = error.response.data.cod;
-        if(code ==='404'){
+
+        if (code ==='404') {
             res.status(statusCode).send('Something broke! There is error '+statusCode);
-        }else{
+        } else {
             res.status(statusCode).send('Something broke which is error :' +statusCode);
         }
-            console.log(error.response.data);
     });
 });
 

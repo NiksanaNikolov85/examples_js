@@ -1,7 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 
-const app = express()
+const app = express();
 
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', function (req, res) {

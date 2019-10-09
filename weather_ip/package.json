@@ -1,7 +1,7 @@
 {
-  "name": "project",
+  "name": "weather_ip",
   "version": "1.0.0",
-  "description": "bulding Node project",
+  "description": "weather IP",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",

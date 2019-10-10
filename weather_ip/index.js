@@ -30,6 +30,7 @@ app.get('/posts/:city', (req, res) => {
         params: {
             q: req.params.city,
             APPID,
+            units: 'metric',
         }
     }).then((result) => {
         res.setHeader('Content-Type', 'application/json');

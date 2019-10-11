@@ -12,12 +12,42 @@ console.log(matches({ hair: 'long', beard: true }, { age: 26, hair: 'long', bear
 
 function checkProp(obj1, obj2) {
     for(let k in obj2){
-        if(obj1.hasOwnProperty(k) && obj2.hasOwnProperty(k))
-            return true;
+        if(!(obj1.hasOwnProperty(k) && (obj1[k] === obj2[k]))){
             return false;
-       
+        }         
     }
+    return true;
 }
-checkProp( { age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true } );
-checkProp( { hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true } );
-checkProp( { hair: 'long', beard: true }, { age: 26, hair: 'long', beard: true } );
+console.log(checkProp( { age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true } ));
+console.log(checkProp( { hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true } ));
+console.log(checkProp( { hair: 'long', beard: true }, { age: 26, hair: 'long', beard: true } ));
+console.log(checkProp({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: false } ));
+
+const myFunction = (obj1, obj2) => {
+    let areSame = true;
+
+    Object.keys(obj2).forEach((el) => {
+        if (!(obj1.hasOwnProperty(el) && (obj1[el] === obj2[el]))) {
+            areSame = false;
+        }
+    });
+
+    return areSame;
+};
+
+const myFunction2 = (obj1, obj2) => !Object.keys(obj2)
+    .some((el) =>
+        obj1[el] !== obj2[el]
+    );
+
+console.log('......');
+console.log(myFunction( { age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true } ));
+console.log(myFunction( { hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true } ));
+console.log(myFunction( { hair: 'long', beard: true }, { age: 26, hair: 'long', beard: true } ));
+console.log(myFunction({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: false } ));
+
+console.log('......');
+console.log(myFunction2( { age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true } ));
+console.log(myFunction2( { hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true } ));
+console.log(myFunction2( { hair: 'long', beard: true }, { age: 26, hair: 'long', beard: true } ));
+console.log(myFunction2({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: false } ));

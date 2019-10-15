@@ -1,0 +1,77 @@
+.main{
+top: 0px;
+left: 0px;
+/* width: 960px;
+height: 4139px; */
+background: #F0F9F7 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+
+.section-2{
+display: flex;
+justify-content: space-around;
+}
+
+.section-3{
+    margin-top:50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+    
+
+.square {
+    top: 543px;
+    left: 85px;
+    width: 209px;
+    height: 205px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    text-align: center;
+}
+
+.square-big {
+    width: 340px;
+    height: 303px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #EDEFF8;
+    border-radius: 4px;
+    opacity: 1;
+
+}
+
+.session-icon {
+    width: 55px;
+    height: 51px;
+    color: #E66341;
+}
+
+.session-heart {
+    width: 53px;
+    height: 51px;
+    color: #FFCD00;
+    opacity: 1;
+}
+
+.session-tick {
+    width: 51px;
+    height: 51px;
+    color: #39AEA9;
+    opacity: 1;
+}
+.session-title {
+    margin: 19px 38px 38px 19px;
+    display: block;
+    font: Bold 14px/19px Open Sans;
+    color: #46484E;
+    opacity: 0.66;
+}
+
+.session-subtitle {
+    display: block;
+    margin: 28px 50px 50px 48px;
+    letter-spacing: 0;
+    color: #46484E;
+    opacity: 0.88;
+    font: Bold 25px/34px Open Sans;
+}

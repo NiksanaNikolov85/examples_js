@@ -1,15 +1,14 @@
 .main{
 top: 0px;
 left: 0px;
-/* width: 960px;
-height: 4139px; */
 background: #F0F9F7 0% 0% no-repeat padding-box;
 opacity: 1;
 }
 
 .section-2{
-display: flex;
-justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .section-3{
@@ -31,14 +30,22 @@ justify-content: space-around;
 }
 
 .square-big {
-    width: 340px;
+    position: relative;
+    flex: 0 0 340px;
     height: 303px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #EDEFF8;
     border-radius: 4px;
     opacity: 1;
-
+    margin: 10px;
+    border: 1px solid red;
 }
+
+/* .square-content {
+    width: 340px;
+    height: 303px;
+    border: 1px solid red;
+} */
 
 .session-icon {
     width: 55px;
@@ -67,6 +74,18 @@ justify-content: space-around;
     opacity: 0.66;
 }
 
+.pic-title {
+    width: 175px;
+    height: 34px;
+    text-align: center;
+    font: Bold 20px/27px Open Sans;
+    letter-spacing: 0;
+    color: #46484E;
+    opacity: 1;
+    margin-left: auto;
+    margin-right:auto;
+}
+
 .session-subtitle {
     display: block;
     margin: 28px 50px 50px 48px;
@@ -74,4 +93,98 @@ justify-content: space-around;
     color: #46484E;
     opacity: 0.88;
     font: Bold 25px/34px Open Sans;
+}
+
+.image {
+    background-image:url(trump.jpg);
+    width: 100px;
+    height: 100px;
+    border: 1px solid #EDEFF8;
+    opacity: 1;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-size: cover;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}
+.new-image {
+    width: 92px;
+    height: 92px;
+    border: 1px solid #EDEFF8;
+    opacity: 1;
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-right:-10px ;
+}
+
+.new-image.empty-image {
+    display:flex;
+    justify-content: center;
+    background: #C3E6E0
+   
+}
+
+.number5 {
+    position: absolute;
+    top: 50%;;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.square-big img:nth-of-type(1) {
+    z-index: 3;
+}
+
+.square-big img:nth-of-type(2) {
+    z-index: 2;
+}
+
+.square-big img:nth-of-type(3) {
+    z-index: 1;
+}
+
+.group-photos {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.far.fa-comment-alt{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 22px;
+    height: 23px;
+    text-align: center;
+    font: Regular 22px/28px Font Awesome 5 Free;
+    letter-spacing: 1.72px;
+    color: #39AEA9;
+    opacity: 1;
+}
+
+.start-session {
+    position: absolute;
+    width: 340px;
+    height: 55px;
+    background: #39AEA9 0% 0% no-repeat padding-box;
+    opacity: 1;
+    bottom: 0;
+}
+
+.start-title {
+    width: 340px;
+    height: 24px;
+    text-align: center;
+    font: Regular 14px/19px FontAwesome;
+    letter-spacing: 1.09px;
+    color: #FEFEFE;
+    opacity: 1;
 }

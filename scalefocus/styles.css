@@ -170,6 +170,24 @@ opacity: 1;
     opacity: 1;
 }
 
+.fas.fa-sort-amount-up {
+    width: 30px;
+    height: 26px;
+    text-align: left;
+    font: Regular 17px/22px Font Awesome 5 Free;
+    letter-spacing: 0;
+    color: #39AEA9;
+    opacity: 1;
+   float: right;
+}
+
+.fas.fa-play {
+    width: 11px;
+    height: 14px;
+    color: #39AEA9;
+    opacity: 1;
+}
+
 .start-session {
     position: absolute;
     width: 340px;
@@ -177,6 +195,11 @@ opacity: 1;
     background: #39AEA9 0% 0% no-repeat padding-box;
     opacity: 1;
     bottom: 0;
+}
+
+.history {
+    display: flex;
+    padding: 50px;
 }
 
 .start-title {
@@ -188,3 +211,121 @@ opacity: 1;
     color: #FEFEFE;
     opacity: 1;
 }
+
+.session-history {
+    width: 124px;
+    height: 18px;
+    text-align: left;
+    font: Bold 13px/18px Open Sans;
+    letter-spacing: 0.46px;
+    color: #46484E;
+    opacity: 0.66;
+    flex-grow: 1;
+}
+
+.exercise-box {
+    display: flex;
+    justify-content:space-between;
+    width: 797px;
+    height: 68px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.inside-line {
+    display: inline-block;
+    width: 112px;
+    height: 22px;
+    text-align: left;
+    font: SemiBold 16px/22px Open Sans;
+    letter-spacing: 0;
+    color: #39AEA9;
+    opacity: 1;
+    margin: 25px;
+}
+
+.play {
+    width: 168px;
+    height: 42px;
+    background: #EFF8F6 0% 0% no-repeat padding-box;
+    border-radius: 21px;
+    opacity: 1;
+    margin: 15px;
+    border: unset;
+}
+
+.play:hover {
+    border: 1px solid #39AEA9;
+}
+
+.play-text {
+    width: 81px;
+    height: 19px;
+    text-align: left;
+    font: SemiBold 14px/19px Open Sans;
+    letter-spacing: 0;
+    color: #39AEA9;
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.input-lable {
+    width: 799px;
+    height: 780px;
+    background: #c3e6e054 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 6px #0000000A;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+form {
+margin: 40px;
+}
+
+form label {
+    color: red;
+}
+
+
+
+#lfname {
+    width: 509px;
+    height: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+#text-lable {
+    width: 50px;
+    height: 19px;
+    text-align: left;
+    font: Regular 14px/20px Open Sans;
+    letter-spacing: 0;
+    opacity: 0.87;
+    margin-right: 150px;
+    }
+
+label {
+    width: 42px;
+    height: 19px;
+    text-align: left;
+    font: Regular 14px/20px Open Sans;
+    letter-spacing: 0;
+    color: #4D4F5C;
+}
+
+
+
+
+
+
+
+
+
+

@@ -5,7 +5,7 @@ background: #F0F9F7 0% 0% no-repeat padding-box;
 opacity: 1;
 }
 
-.section-2{
+.section-2 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -284,31 +284,35 @@ opacity: 1;
 }
 
 form {
-margin: 40px;
+margin: 35px;
 }
 
 form label {
-    color: red;
+    font: Regular 14px/20px Open Sans;
+    letter-spacing: 0;
+    color: #4D4F5C;
+    opacity: 0.87;
 }
 
 
 
-#lfname {
+.lfname {
     width: 509px;
     height: 40px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 4px;
     opacity: 1;
+    border:none;
 }
 
-#text-lable {
-    width: 50px;
+.text-label {
+    width: 80px;
     height: 19px;
     text-align: left;
     font: Regular 14px/20px Open Sans;
     letter-spacing: 0;
     opacity: 0.87;
-    margin-right: 150px;
+    margin-right: 130px;
     }
 
 label {
@@ -320,8 +324,36 @@ label {
     color: #4D4F5C;
 }
 
+.helper-text {
+    font: Regular 13px/13px Open Sans;
+    letter-spacing: 0;
+    color: #808495;
+    opacity: 1;
+}
 
+.star {
+    color: red;
+}
 
+::placeholder {
+    font: Regular 13px/13px Open Sans;
+    letter-spacing: 0;
+    color: #CECFD0;
+    opacity: 1;
+  }
+
+.label-div {
+    display: flex;
+    padding-top: 30px;
+}
+
+input:hover {
+    outline: 1px solid #39AEA9;
+}
+
+input:focus:invalid {
+    outline: 2px dashed red;
+  }
 
 
 

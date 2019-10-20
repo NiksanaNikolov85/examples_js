@@ -351,13 +351,31 @@ input:hover {
     outline: 1px solid #39AEA9;
 }
 
-input:focus:invalid {
-    outline: 2px dashed red;
+
+input#name:required:focus:invalid {
+    outline-color: red;
   }
 
+ input.lfname:required:focus:valid {
+    background-color: rgb(151, 245, 151);
+  }
 
+  input#city:required:focus:invalid {
+    outline-color: red;
+  }
 
+  input#telNumber:required:focus:invalid {
+    outline-color: red;
+  }
 
+  input#telNumber:required:focus:valid {
+    background-color: rgb(151, 245, 151);
+  }
 
+  input#email:required:focus:invalid {
+    outline-color: red;
+  }
 
-
+  input#email:required:focus:valid {
+    background-color: rgb(151, 245, 151);
+  }

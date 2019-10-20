@@ -196,7 +196,7 @@
                         <div class="label-div">
                              <label class="text-label" for="lfname">Name:<span class="star">*</span></label> 
                             <div>
-                                <input class="lfname" name="fname" type="text" placeholder="Placeholder" required minlength="6">
+                                <input id="name" class="lfname" name="fname" type="text" placeholder="The name must be more then 6 symbols" required minlength="6">
                                 <p class="helper-text">Helper Text</p>
                             </div>
                         </div>
@@ -204,15 +204,15 @@
                         <div class="label-div">
                                 <label class="text-label" for="lfname">Surname:</label> 
                                <div>
-                                   <input class="lfname" name="fname" type="text" placeholder="Placeholder" />
-                                   <p class="helper-text">Helper Text</p>
+                                 <input class="lfname" name="fname" type="text" placeholder="The name must be more then 6 symbols" required minlength="6">
+                                 <p class="helper-text">Helper Text</p>
                                </div>
                         </div>
 
                         <div class="label-div">
                                 <label class="text-label" for="lfname">City:</label> 
                                <div>
-                                   <input class="lfname" name="fname" type="text" placeholder="Placeholder" />
+                                   <input id="city" class="lfname" name="fname" type="text" pattern="Sofia" placeholder="You must be from Sofia" required />
                                    <p class="helper-text">Helper Text</p>
                                </div>
                         </div>
@@ -220,7 +220,7 @@
                         <div class="label-div">
                                 <label class="text-label" for="lfname">Tel number:</label> 
                                <div>
-                                   <input class="lfname" name="fname" type="number" placeholder="Placeholder" />
+                                   <input id="telNumber" class="lfname" name="fname" type="number" pattern="^[0-9]{4,6}$" placeholder="Enter tel number" required/>
                                    <p class="helper-text">Helper Text</p>
                                </div>
                         </div>
@@ -236,7 +236,7 @@
                         <div class="label-div">
                                 <label class="text-label invalid" for="lfname">E-mail:</label> 
                                <div>
-                                   <input class="lfname invalid" name="fname" type="text" required />
+                                   <input id="email" class="lfname invalid" name="fname" type="text" pattern="[^@]+@[^\.]+\..+" required />
                                    <p class="helper-text">Helper Text</p>
                                </div>
                         </div>

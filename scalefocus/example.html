@@ -10,6 +10,55 @@
 </head>
 <body>
     <div class="main">
+        <div class="main-header">
+            <div class="profile"><i class="fas fa-user-md fa-2x"><span class="profile-text">Profile</span></i></div>
+            <div class="personal-info">
+                    <div class="left-part">
+                            <img src="trump.jpg" class="image"></img>
+                            <div class="buttons">
+                                <button class="btnMsg"><span class="start-title">MESSAGE</span> </button>
+                                <button class="btnEdit"><span>EDIT PROFILE</span></button>
+                            </div>
+                            
+                    </div>
+                    <div class="right-part">
+                        <div><span class="mainName">Slav Ganev Ivanov</span></div>
+                        <div class="personInfo">
+                            <div class="leftInfo">
+                                <div class="leftInfo-prop">
+                                    <span class="property">AGE:</span>
+                                    <span class="property">EMAIL:</span>
+                                    <span class="property">DEVICE:</span>
+                                </div>
+                                <div class="leftInfo-value">
+                                        <span class="property-val">25</span>
+                                        <span class="property-val">Slavi_ivanov@gmail.com</span>
+                                        <span class="property-val">No device assigned. <span class="assign-device">Assing device</span></span>
+                                </div>
+                            </div>
+
+                            <div class="rightInfo">
+                                    <div class="leftInfo-prop">
+                                            <span class="property">ADRESS:</span>
+                                            <span class="property">PHONE:</span>
+                                        </div>
+                                        <div class="leftInfo-value">
+                                                <span class="property-val">Sofia City, Gurko Str.145B</span>
+                                                <span class="property-val">+359 888 754 743</span>
+                                        </div>
+                            </div>
+                        </div>
+                        <div class="lorem-part">
+                            <div class="lorem-part-1"><span class="lorem-title">CONDITION</span><span class="lorem-title">DOCS</span></div>
+                        </div>
+                    </div>
+                   
+
+            </div>
+
+
+        </div>
+
         <div>
             <div><span class="session-title" >LAST SESSION</span></div>
            <div class="section-2">
@@ -192,7 +241,7 @@
 
         <section class="input-lable">
           
-                    <form>
+                    <form class="sign-up-form">
                         <div class="label-div">
                              <label class="text-label" for="lfname">Name:<span class="star">*</span></label> 
                             <div>
@@ -212,7 +261,7 @@
                         <div class="label-div">
                                 <label class="text-label" for="lfname">City:</label> 
                                <div>
-                                   <input id="city" class="lfname" name="fname" type="text" pattern="Sofia" placeholder="You must be from Sofia" required />
+                                   <input id="city" class="lfname" name="fname" type="text" pattern="Sofia|Plovdiv" placeholder="You must be from Sofia" required />
                                    <p class="helper-text">Helper Text</p>
                                </div>
                         </div>
@@ -234,9 +283,9 @@
                         </div>
 
                         <div class="label-div">
-                                <label class="text-label invalid" for="lfname">E-mail:</label> 
+                                <label class="text-label" for="lfname">E-mail:</label> 
                                <div>
-                                   <input id="email" class="lfname invalid" name="fname" type="text" pattern="[^@]+@[^\.]+\..+" required />
+                                   <input id="email" class="lfname" name="fname" type="text" pattern="[^@]+@[^\.]+\..+" required />
                                    <p class="helper-text">Helper Text</p>
                                </div>
                         </div>

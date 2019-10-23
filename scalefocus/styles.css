@@ -184,7 +184,7 @@ opacity: 1;
     letter-spacing: 0;
     color: #39AEA9;
     opacity: 1;
-   float: right;
+    float: right;
 }
 
 .fas.fa-play {
@@ -382,7 +382,7 @@ input:hover {
     outline-color: red;
   } */
 
-.sign-up-form input:invalid {
+.sign-up-form input:focus:invalid {
     outline: 1px solid red;
   }
 
@@ -394,7 +394,6 @@ input:hover {
 
 .main-header {
        width: 800px;
-       background: rgb(219, 172, 172);
        margin-left: auto;
        margin-right: auto;
    }
@@ -419,12 +418,10 @@ i.fas.fa-user-md {
    }
 
 .left-part {
-       background: red;
-       flex-grow: 1;
+       flex: 1;
    }
 .right-part {
-    background: yellow;
-    flex-grow: 6;
+    flex: 3;
 }   
 
 .buttons {
@@ -501,4 +498,35 @@ i.fas.fa-user-md {
     text-decoration: underline;
     letter-spacing: 0;
     color: #39AEA9;
+}
+
+.lorem-title {
+    text-align: left;
+    font: Bold 13px/18px Open Sans;
+    letter-spacing: 0.46px;
+    color: #46484E;
+    opacity: 0.66;
+    margin: 20px;
+    
+}
+
+.lorem-title:hover {
+   border-bottom: 3px green solid;
+    text-decoration-color :green;
+}
+
+.lorem-text {
+    text-align: left;
+    font: Regular 14px/21px Open Sans;
+    letter-spacing: 0;
+    color: #46484EBD;
+    opacity: 1;
+}
+
+.right-part div {
+    margin-top: 20px;
+}
+
+.left-info div span {
+    margin: 5px;
 }

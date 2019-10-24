@@ -1,3 +1,4 @@
+ 
 .main{
 top: 0px;
 left: 0px;
@@ -44,7 +45,6 @@ opacity: 1;
     border-radius: 4px;
     opacity: 1;
     margin-bottom: 20px;
-    border: 1px solid red;
 }
 
 /* .square-content {
@@ -407,7 +407,7 @@ i.fas.fa-user-md {
     letter-spacing: 0;
     color: #39AEA9;
     opacity: 1;
-    font: Regular 14px/20px ;
+    font: Normal 25px/20px Open Sans ;
     margin-left: 20px;
    }
 
@@ -486,7 +486,7 @@ i.fas.fa-user-md {
 .property-val {
     display: block;
     text-align: left;
-    font: Regular 14px/19px Open Sans;
+    font: Normal 14px/19px Open Sans;
     letter-spacing: 0;
     color: #46484EBD;
     opacity: 1;
@@ -517,7 +517,7 @@ i.fas.fa-user-md {
 
 .lorem-text {
     text-align: left;
-    font: Regular 14px/21px Open Sans;
+    font: Normal 14px/21px Open Sans;
     letter-spacing: 0;
     color: #46484EBD;
     opacity: 1;

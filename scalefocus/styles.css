@@ -580,3 +580,45 @@ i.fas.fa-user-md {
 .left-info div span {
     margin: 5px;
 }
+
+/* Mobile nav*/
+
+@media all and (max-width:800px) {
+    /* Main Header*/
+.main-header {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.profile {
+    text-align: center;
+}
+
+.personal-info {
+    flex-direction: column;
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+    width: auto;
+}
+
+.section-3 {
+    width: auto;
+    justify-content: center;
+}
+
+.section-4 .exercise-box{
+    width: auto;
+}
+
+.input-lable  {
+    width: auto;
+}
+
+
+}

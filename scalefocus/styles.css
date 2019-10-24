@@ -47,6 +47,56 @@ opacity: 1;
     margin-bottom: 20px;
 }
 
+.fa-ellipsis-v {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: #39AEA9;
+    opacity: 1;
+
+}
+
+.fa-ellipsis-v:hover +.pop-up {
+    visibility: visible;
+}
+
+
+
+.pop-up {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 112px;
+    height: 95px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #DDDCD7;
+    border-radius: 4px;
+    opacity: 1;
+    position: absolute;
+    top:40px;
+    right: -110px;
+}
+
+.pop-edit {
+    font: Normal 18px/21px FontAwesome;
+    letter-spacing: 0;
+    color: #39AEA9;
+    opacity: 1;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+.pop-delete {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.pop {
+    padding: 0 0 10px 30px;
+}
 /* .square-content {
     width: 340px;
     height: 303px;
@@ -102,7 +152,7 @@ opacity: 1;
 }
 
 .image {
-    background-image:url(trump.jpg);
+    background-image:url(obama.jpg);
     width: 100px;
     height: 100px;
     border: 1px solid #EDEFF8;

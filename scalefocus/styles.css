@@ -250,7 +250,8 @@
  
  .history {
      display: flex;
-     padding: 50px;
+     width: 800px;
+     margin: 0 auto;
  }
  
  .start-title {
@@ -610,4 +611,44 @@
     .input-lable  {
         width: auto;
     } */
+ }
+ 
+ @media all and (min-width:1224px) and (max-width:1824px) {
+     .large-screen {
+         display: flex;
+     }
+     .history {
+         width: auto;
+     }
+     .exercise-box {
+         width: auto;
+     }
+     .section-4 {
+         flex: 1 1 40%;
+     }
+     .input-lable {
+         flex: 1 1 40%;
+     }
+     .lfname {
+         width: 400px;
+     }
+     /* 3th part   */
+     .section-3 {
+         display: flex;
+         justify-content: space-around;
+         width: auto;
+     }
+     .square-big {
+         flex: 0 0 300px;
+         height: 280px;
+     }
+     img.image {
+         margin: 30px auto;
+     }
+     .pic-title {
+         margin: 0 auto;
+     }
+     .start-session {
+         width: 100%;
+     }
  }

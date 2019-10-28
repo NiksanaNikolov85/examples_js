@@ -640,7 +640,7 @@
      }
      .square-big {
          flex: 0 0 300px;
-         height: 280px;
+         height: 250px;
      }
      img.image {
          margin: 30px auto;
@@ -650,5 +650,18 @@
      }
      .start-session {
          width: 100%;
+     }
+     .main-header-largescreen {
+         display: flex;
+     }
+     .main-header {
+         flex: 1;
+     }
+     .part-1 {
+         flex: 1;
+     }
+     .section-2 {
+         justify-content: space-around;
+         width: auto;
      }
  }

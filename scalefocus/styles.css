@@ -467,7 +467,7 @@
      text-align: center;
  }
  
- .btnMsg {
+ .btn-msg {
      display: block;
      width: 118px;
      height: 39px;
@@ -478,7 +478,7 @@
      margin: 20px auto 20px auto;
  }
  
- .btnEdit {
+ .btn-edit {
      display: block;
      width: 118px;
      height: 39px;
@@ -489,7 +489,7 @@
      margin: 20px auto 20px auto;
  }
  
- .mainName {
+ .main-name {
      text-align: left;
      font: Bold 22px/30px Open Sans;
      letter-spacing: 0;
@@ -497,17 +497,17 @@
      opacity: 1;
  }
  
- .personInfo {
+ .person-info {
      display: flex;
      flex-direction: row;
  }
  
- .leftInfo {
+ .left-info {
      display: flex;
      flex-grow: 1;
  }
  
- .rightInfo {
+ .right-info {
      display: flex;
      flex-grow: 1;
  }
